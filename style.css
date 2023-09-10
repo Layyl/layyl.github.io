@@ -3,7 +3,7 @@
 
 :root{
     --clr-primary: #151515;
-    --clr-secondary: hsl(0, 0%, 14%);
+    --clr-secondary: hsl(0, 0%, 48%);
     --clr-accent: #BAAE70;
     --clr-accent-500: #938955;
     --clr-white: #e7e5df;
@@ -350,4 +350,85 @@ text-decoration-color: var(--clr-accent);
     bottom: -1.78rem;
     right:-1.8rem;
     width: 3.5rem;
+}
+
+.services-form {
+    position: relative;
+    width: 50%;
+    margin: 3rem;
+    text-align: center;
+}
+
+.form-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.services-form p{
+font-size: 1.5rem;
+color: var(--clr-secondary);
+margin: 0 0 3rem 0;
+}
+.services-form h1{
+font-size: 4rem;
+color: var(--clr-primary);
+margin: 0;
+}
+.services-form span{
+font-weight: 600;
+color: var(--clr-primary);
+margin: 0;
+}
+
+.input-text{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+.input-text .name, .email{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 0.3rem;
+    border: 0.6px solid var(--clr-accent);
+    border-radius: .5rem;
+}
+.input-text label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.flex-inputs{
+    display:flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.input-text .service-needed{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 0.3rem;
+    border: 0.6px solid var(--clr-accent);
+    border-radius: .5rem;
+}
+.input-text .service-ta-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-text .service-desc{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 0.3rem;
+    border: 0.6px solid var(--clr-accent);
+    border-radius: .5rem;
+    height: 8rem;
+}
+.input-text .char-limit{
+    font-size: 1rem;
+    text-align: end;
 }
