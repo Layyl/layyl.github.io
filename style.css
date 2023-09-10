@@ -315,8 +315,6 @@ font-size: 1.5rem;
     height: 1px; /* Set the thickness of the border */
     background-color: var(--clr-primary);
 }
-
-
 .list-header h1{
     font-size: 5rem;
     line-height:6rem;
@@ -328,4 +326,28 @@ font-size: 1.5rem;
     margin-top: 0;
     margin-bottom:3rem;
     padding: 0;
+}
+.list-items{
+    position: relative;
+    margin: 3rem;
+}
+.list-items ul{
+    list-style: none;
+    padding-left: 0;
+}
+.list-items ul li{
+font-size: 2rem;
+font-weight: 500;
+cursor: pointer;
+}
+
+.list-items ul li:hover{
+text-decoration: line-through;
+text-decoration-color: var(--clr-accent);
+}
+.services .services-list .list-header .services-diamond{
+    position: absolute;
+    bottom: -1.78rem;
+    right:-1.8rem;
+    width: 3.5rem;
 }
