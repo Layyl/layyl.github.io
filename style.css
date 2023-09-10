@@ -114,14 +114,14 @@ body{
 }
 .about .about-diamond-top{
     position: absolute;
-    top: -2.78rem;
+    top: -1.78rem;
     right: 2.5rem;
-    width: 5.5rem;
+    width: 3.5rem;
 }
 .about .about-diamond-bottom{
     position: absolute;
-    bottom: -2.78rem;
-    width: 5.5rem;
+    bottom: -1.78rem;
+    width: 3.5rem;
 }
 .scroll-down{
     display: flex;
@@ -246,4 +246,86 @@ font-size: 1.5rem;
 .darkbtn:hover{
     background-color: var(--clr-accent-500);
     transition: all 0.3s ease-in-out;
+}
+
+.cta{
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 5rem 0;
+    margin-bottom: 0;
+    border-bottom: 0.06rem solid var(--clr-primary);
+}
+
+.cta .cta-text{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+
+}
+.cta h1{
+    font-size: 3.125rem;
+    line-height: 1rem;
+}
+.cta p {
+    font-size: 1.56rem;
+}
+.cta button {
+    margin-bottom: 4.5rem;
+    color:var(--clr-primary);
+}
+.cta span{
+    font-weight: bold;
+}
+.cta .cta-diamond-bottom{
+    position: absolute;
+    bottom: -1.78rem;
+    left: 7rem;
+    width: 3.5rem;
+}
+
+.services{
+    margin: 0;
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.services-list{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-right: 0.6px solid var(--clr-primary);
+}
+.list-header {
+    position: relative; /* Add relative positioning */
+    margin-left: 3rem;
+    line-height: -0.6rem;
+}
+
+.list-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%; /* Set the width of the border to 1/4 of the div */
+    height: 1px; /* Set the thickness of the border */
+    background-color: var(--clr-primary);
+}
+
+
+.list-header h1{
+    font-size: 5rem;
+    line-height:6rem;
+    margin-bottom: 1rem;
+}
+.list-header p{
+    font-size: 2rem;
+    color: var(--clr-secondary);
+    margin-top: 0;
+    margin-bottom:3rem;
+    padding: 0;
 }
